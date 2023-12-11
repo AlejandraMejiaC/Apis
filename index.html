@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buscador de Temperatura</h1>
+
+  <label for="cityInput">Ingrese el nombre de la ciudad: </label>
+  <input type="text" id="cityInput" placeholder="Ejemplo: Madrid">
+
+  <button onclick="buscarTemperatura()">Buscar</button>
+
+  <div id="resultados"></div>
+
+  <div class="search-container">
+    <label for="pokemon-input">Buscar Pokémon:</label>
+    <input type="text" id="pokemon-input" placeholder="Ingrese el nombre o número del Pokémon">
+    <button onclick="searchPokemon()">Buscar</button>
+  </div>
+
+  <div id="pokemon-card" class="hidden">
+    <img id="pokemon-image" src="" alt="Pokémon Image">
+    <h2 id="pokemon-name"></h2>
+    <p id="pokemon-abilities"></p>
+    <p id="pokemon-types"></p>
+    <p id="pokemon-moves"></p>
+  </div>
+    <script src="peticiones.js"></script>
+</body>
+</html>
